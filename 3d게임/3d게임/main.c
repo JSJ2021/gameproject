@@ -1,15 +1,25 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <Windows.h>
+#include "3d게임엔진.h"
 
-void gotoxy(int x, int y) {
-	COORD pos = { x,y };
-
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+struct vec3d
+{
+	float x, y,z;
+};
+struct triangle
+{
+	struct vec3d vec[3];
+};
+void game_3DEngine() {
+	return 1;
+}
+void usercreate() {
+	return 1;
+}
+void userUpdate() {
+	return 1;
 }
 
 int main(void) {
-	system("mode con: cols=60 lines=20");
+	system("mode con: cols=256 lines=240");
 	int num = 0;
 	while (1) {
 		printf("1.종료");
