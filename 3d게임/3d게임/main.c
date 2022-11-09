@@ -10,6 +10,16 @@ void gotoxy(int x, int y) {
 
 int main(void) {
 	system("mode con: cols=60 lines=20");
-	printf("hello world");
+	int num = 0;
+	while (1) {
+		printf("1.종료");
+		scanf("%d", &num);
+		if (num == 1) {
+			printf("종료합니다");
+			break;
+		}
+		system("pause");
+		system("cls");
+	}
 	return 0;
 }
